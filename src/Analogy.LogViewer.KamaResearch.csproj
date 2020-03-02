@@ -51,8 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KamaActionsFactory.cs" />
-    <Compile Include="KamaFactories.cs" />
+    <Compile Include="IAnalogy\KamaActionsFactory.cs" />
+    <Compile Include="IAnalogy\KamaFactories.cs" />
+    <Compile Include="Managers\LogManager.cs" />
     <Compile Include="NlogDataParser.cs" />
     <Compile Include="NlogFileParser.cs" />
     <Compile Include="OfflineLog.cs" />
@@ -70,7 +71,7 @@
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
     <Compile Include="UserSettings.cs" />
-    <Compile Include="UserSettingsManager.cs" />
+    <Compile Include="Managers\UserSettingsManager.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +115,7 @@
   <ItemGroup>
     <None Include="Resources\settings.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>if exist "..\..\..\..\..\Analogy_Log_Viewer\Analogy\bin\Debug\"  xcopy "$(TargetDir)$(TargetName).dll" "..\..\..\..\..\Analogy_Log_Viewer\Analogy\bin\Debug\" /y</PostBuildEvent>

@@ -3,6 +3,7 @@ using System;
 using System.Drawing;
 using System.Threading.Tasks;
 using Analogy.Implementation.KafkaProvider;
+using Analogy.Implementation.KamaResearch.Managers;
 using Confluent.Kafka;
 using Analogy.Interfaces;
 namespace Analogy.Implementation.KamaResearch
@@ -20,17 +21,18 @@ namespace Analogy.Implementation.KamaResearch
         public event EventHandler<AnalogyLogMessageArgs> OnMessageReady;
         public event EventHandler<AnalogyLogMessagesArgs> OnManyMessagesReady;
         private readonly UserSettingsManager settingsManager = UserSettingsManager.Instance;
-        private IAnalogyLogger Logger { get; set; }
+
         private KafkaConsumer<AnalogyLogMessage> Consumer { get; set; }
 
 
         public Task InitializeDataProviderAsync(IAnalogyLogger logger)
         {
+            LogManager.Instance.SetLogger(logger);
             Consumer = new KafkaConsumer<AnalogyLogMessage>(settingsManager.Settings.GroupId + DateTime.Now.Ticks, settingsManager.Settings.KafkaAddress, settingsManager.Settings.KafkaTopic);
             Consumer.OnMessageReady += Consumer_OnMessageReady;
             Consumer.OnError += Consumer_OnError;
             IsConnected = true;
-            Logger = logger;
+            
             return Task.CompletedTask;
         }
 
