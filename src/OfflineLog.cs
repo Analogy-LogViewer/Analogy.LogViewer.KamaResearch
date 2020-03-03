@@ -25,6 +25,7 @@ namespace Analogy.Implementation.KamaResearch
         public string FileSaveDialogFilters => "NLog file (*.nlog)|*.nlog";
         public IEnumerable<string> SupportFormats { get; } = new[] { "*.nlog" };
         public string InitialFolderFullPath { get; } = @"C:\temp";
+        public bool DisableFilePoolingOption { get; } = false;
 
         public Task InitializeDataProviderAsync(IAnalogyLogger logger)
         {
@@ -100,7 +101,7 @@ namespace Analogy.Implementation.KamaResearch
                fileName.EndsWith(".json", StringComparison.InvariantCultureIgnoreCase);
 
         public bool CanOpenAllFiles(IEnumerable<string> fileNames) => fileNames.All(CanOpenFile);
-
+ 
         public static List<FileInfo> GetSupportedFilesInternal(DirectoryInfo dirInfo, bool recursive)
         {
             List<FileInfo> files = dirInfo.GetFiles("*.nlog").Concat(dirInfo.GetFiles("*.json"))
