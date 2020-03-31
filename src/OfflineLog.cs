@@ -1,29 +1,26 @@
-﻿using System;
+﻿using Analogy.Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Analogy.Interfaces;
 
 namespace Analogy.Implementation.KamaResearch
 {
     public class OfflineLog : IAnalogyOfflineDataProvider
     {
         public string OptionalTitle { get; } = "Kama offline logs";
-        public Image OptionalOpenFolderImage { get; } = null;
-        public Image OptionalOpenFilesImage { get; } = null;
 
         public Guid ID { get; } = new Guid("37E87AD9-109E-4E31-A9D7-F0C8D289DC08");
 
         public bool CanSaveToLogFile { get; } = true;
         public string FileOpenDialogFilters { get; } = "Nlog file (*.nlog)|*.nlog";
-
+        public bool DisableFilePoolingOption { get; } = false;
         public string FileSaveDialogFilters => "NLog file (*.nlog)|*.nlog";
         public IEnumerable<string> SupportFormats { get; } = new[] { "*.nlog" };
-        public string InitialFolderFullPath { get; } = @"C:\temp";
+        public string InitialFolderFullPath { get; } = @"C:\kalpa\logs";
 
         public Task InitializeDataProviderAsync(IAnalogyLogger logger)
         {
@@ -98,6 +95,7 @@ namespace Analogy.Implementation.KamaResearch
                fileName.EndsWith(".json", StringComparison.InvariantCultureIgnoreCase);
 
         public bool CanOpenAllFiles(IEnumerable<string> fileNames) => fileNames.All(CanOpenFile);
+
 
         public static List<FileInfo> GetSupportedFilesInternal(DirectoryInfo dirInfo, bool recursive)
         {

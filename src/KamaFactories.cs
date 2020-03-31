@@ -8,10 +8,9 @@ namespace Analogy.Implementation.KamaResearch
 {
     public class KamaFactories : IAnalogyFactory
     {
-        public Guid FactoryID { get; } = new Guid("D37EEA25-6CA3-40B2-8454-D53485887693");
+        internal static Guid Id = new Guid("D37EEA25-6CA3-40B2-8454-D53485887693");
+        public Guid FactoryId { get; } = Id;
         public string Title { get; } = "Kama Research";
-        public IAnalogyDataProvidersFactory DataProviders { get; } = new DataSourceFactory();
-        public IAnalogyCustomActionsFactory Actions { get; } = new KamaActionsFactory();
         public IEnumerable<IAnalogyChangeLog> ChangeLog => GetChangeLog();
         public IEnumerable<string> Contributors { get; } = new List<string> { "Lior Banai" };
         public string About { get; } = "Kama Research Analogy Implementation";
@@ -24,8 +23,10 @@ namespace Analogy.Implementation.KamaResearch
 
     public class DataSourceFactory : IAnalogyDataProvidersFactory
     {
+        public Guid FactoryId { get; } = KamaFactories.Id;
         public string Title { get; } = "Kama Research Logs";
-        public IEnumerable<IAnalogyDataProvider> Items { get; } = new List<IAnalogyDataProvider>
+
+        public IEnumerable<IAnalogyDataProvider> DataProviders { get; } = new List<IAnalogyDataProvider>
             {
                 new OnlineLog(),
                //new OfflineLog()
