@@ -6,6 +6,8 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Analogy.Implementation.KamaResearch.Managers;
+using Analogy.Interfaces;
 
 namespace Analogy.Implementation.KamaResearch
 {
@@ -24,6 +26,7 @@ namespace Analogy.Implementation.KamaResearch
 
         public Task InitializeDataProviderAsync(IAnalogyLogger logger)
         {
+            LogManager.Instance.SetLogger(logger);
             return Task.CompletedTask;
         }
 
