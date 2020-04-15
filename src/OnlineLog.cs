@@ -1,5 +1,6 @@
 ﻿using Analogy.Implementation.KamaResearch.Properties;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Threading.Tasks;
 using Analogy.Implementation.KafkaProvider;
@@ -21,7 +22,12 @@ namespace Analogy.Implementation.KamaResearch
         public event EventHandler<AnalogyLogMessageArgs> OnMessageReady;
         public event EventHandler<AnalogyLogMessagesArgs> OnManyMessagesReady;
         private readonly UserSettingsManager settingsManager = UserSettingsManager.Instance;
+        public bool UseCustomColors { get; set; } = false;
+        public IEnumerable<(string originalHeader, string replacementHeader)> GetReplacementHeaders()
+            => Array.Empty<(string, string)>();
 
+        public (Color backgroundColor, Color foregroundColor) GetColorForMessage(IAnalogyLogMessage logMessage)
+            => (Color.Empty, Color.Empty);
         private KafkaConsumer<AnalogyLogMessage> Consumer { get; set; }
 
 

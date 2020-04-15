@@ -1,6 +1,7 @@
 ﻿using Analogy.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Threading;
@@ -23,6 +24,12 @@ namespace Analogy.Implementation.KamaResearch
         public string FileSaveDialogFilters => "NLog file (*.nlog)|*.nlog";
         public IEnumerable<string> SupportFormats { get; } = new[] { "*.nlog" };
         public string InitialFolderFullPath { get; } = @"C:\kalpa\logs";
+        public bool UseCustomColors { get; set; } = false;
+        public IEnumerable<(string originalHeader, string replacementHeader)> GetReplacementHeaders()
+            => Array.Empty<(string, string)>();
+
+        public (Color backgroundColor, Color foregroundColor) GetColorForMessage(IAnalogyLogMessage logMessage)
+            => (Color.Empty, Color.Empty);
 
         public Task InitializeDataProviderAsync(IAnalogyLogger logger)
         {
