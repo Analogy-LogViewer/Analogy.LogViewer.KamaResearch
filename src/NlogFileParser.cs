@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Analogy.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -6,9 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Analogy.Interfaces;
 
-namespace Analogy.Implementation.KamaResearch
+namespace Analogy.LogViewer.KamaResearch
 {
     public abstract class LogLoader
     {

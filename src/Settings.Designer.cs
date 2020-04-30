@@ -1,4 +1,4 @@
-﻿namespace Analogy.Implementation.KamaResearch
+﻿namespace Analogy.LogViewer.KamaResearch
 {
     partial class Settings
     {

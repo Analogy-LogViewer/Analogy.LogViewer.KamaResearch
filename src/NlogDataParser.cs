@@ -1,12 +1,9 @@
 ﻿using Analogy.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Analogy.Implementation.KamaResearch
+namespace Analogy.LogViewer.KamaResearch
 {
     public static class NlogDataParser
     {
@@ -65,7 +62,7 @@ namespace Analogy.Implementation.KamaResearch
                 m.Module = "N/A";//items[];
                 if (items.Length > 4)
                     m.ProcessID = int.Parse(items[4]);
-                
+
                 m.Text = items[3];
                 return m;
             }
