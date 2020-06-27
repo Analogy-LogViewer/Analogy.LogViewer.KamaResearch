@@ -3,8 +3,7 @@ using Analogy.Interfaces.Factories;
 using System;
 using System.Collections.Generic;
 
-
-namespace Analogy.Implementation.KamaResearch
+namespace Analogy.LogViewer.KamaResearch.IAnalogy
 {
     public class KamaFactories : IAnalogyFactory
     {

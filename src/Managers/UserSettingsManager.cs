@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Analogy.Implementation.KamaResearch
+namespace Analogy.LogViewer.KamaResearch.Managers
 {
     [Serializable]
     public class UserSettingsManager

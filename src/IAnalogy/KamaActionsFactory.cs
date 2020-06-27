@@ -1,12 +1,12 @@
-﻿using Analogy.Implementation.KamaResearch.Properties;
-using Analogy.Interfaces;
+﻿using Analogy.Interfaces;
 using Analogy.Interfaces.Factories;
+using Analogy.LogViewer.KamaResearch.Properties;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Analogy.Implementation.KamaResearch
+namespace Analogy.LogViewer.KamaResearch.IAnalogy
 {
     public class KamaActionsFactory : IAnalogyCustomActionsFactory
     {

@@ -1,11 +1,8 @@
-﻿using System;
+﻿using Analogy.Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Analogy.Interfaces;
 
-namespace Analogy.Implementation.KamaResearch.Managers
+namespace Analogy.LogViewer.KamaResearch.Managers
 {
     public class LogManager : IAnalogyLogger
     {

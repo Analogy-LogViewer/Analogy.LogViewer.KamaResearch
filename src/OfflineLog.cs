@@ -1,4 +1,5 @@
 ﻿using Analogy.Interfaces;
+using Analogy.LogViewer.KamaResearch.Managers;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -7,10 +8,8 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Analogy.Implementation.KamaResearch.Managers;
-using Analogy.Interfaces;
 
-namespace Analogy.Implementation.KamaResearch
+namespace Analogy.LogViewer.KamaResearch
 {
     public class OfflineLog : IAnalogyOfflineDataProvider
     {

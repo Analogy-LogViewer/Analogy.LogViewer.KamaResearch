@@ -1,13 +1,13 @@
-﻿using Analogy.Implementation.KamaResearch.Properties;
+﻿using Analogy.Implementation.KafkaProvider;
+using Analogy.Interfaces;
+using Analogy.LogViewer.KamaResearch.Managers;
+using Analogy.LogViewer.KamaResearch.Properties;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Threading.Tasks;
-using Analogy.Implementation.KafkaProvider;
-using Analogy.Implementation.KamaResearch.Managers;
-using Confluent.Kafka;
-using Analogy.Interfaces;
-namespace Analogy.Implementation.KamaResearch
+
+namespace Analogy.LogViewer.KamaResearch
 {
     public class OnlineLog : IAnalogyRealTimeDataProvider
     {
@@ -38,7 +38,7 @@ namespace Analogy.Implementation.KamaResearch
             Consumer.OnMessageReady += Consumer_OnMessageReady;
             Consumer.OnError += Consumer_OnError;
             IsConnected = true;
-            
+
             return Task.CompletedTask;
         }
 

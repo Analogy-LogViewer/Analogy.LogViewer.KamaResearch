@@ -1,14 +1,14 @@
-﻿using System;
+﻿using Analogy.Interfaces;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using Analogy.Interfaces;
-using Newtonsoft.Json;
 
-namespace Analogy.Implementation.KamaResearch
+namespace Analogy.LogViewer.KamaResearch
 {
     public static class Utils
     {
@@ -52,7 +52,11 @@ namespace Analogy.Implementation.KamaResearch
                 {
                     using (Stream myReader = File.Open(filename, FileMode.Open, FileAccess.Read))
                     {
+#if NET472
                         return (T)formatter.Deserialize(myReader, null);
+#else
+                        return (T)formatter.Deserialize(myReader);
+#endif
                     }
                 }
                 catch (Exception ex)

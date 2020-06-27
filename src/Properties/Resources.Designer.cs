@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Analogy.Implementation.KamaResearch.Properties {
+namespace Analogy.LogViewer.KamaResearch.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Analogy.Implementation.KamaResearch.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Analogy.Implementation.KamaResearch.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Analogy.LogViewer.KamaResearch.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
