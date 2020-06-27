@@ -57,14 +57,14 @@ namespace Analogy.Implementation.KamaResearch
                 if (items.Length == 2)
                 {
                     m.Text = items[0];
-                    m.ProcessID = int.Parse(items[1]);
+                    m.ProcessId = int.Parse(items[1]);
                     m.Level = AnalogyLogLevel.Error;
                     return m;
                 }
                 m.Source = items[2];
                 m.Module = "N/A";//items[];
                 if (items.Length > 4)
-                    m.ProcessID = int.Parse(items[4]);
+                    m.ProcessId = int.Parse(items[4]);
                 
                 m.Text = items[3];
                 return m;
