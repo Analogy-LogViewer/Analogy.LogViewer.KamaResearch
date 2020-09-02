@@ -15,7 +15,7 @@ namespace Analogy.LogViewer.KamaResearch
     {
         public string OptionalTitle { get; } = "Kama offline logs";
 
-        public Guid ID { get; } = new Guid("37E87AD9-109E-4E31-A9D7-F0C8D289DC08");
+        public Guid Id { get; } = new Guid("37E87AD9-109E-4E31-A9D7-F0C8D289DC08");
 
         public bool CanSaveToLogFile { get; } = true;
         public string FileOpenDialogFilters { get; } = "Nlog file (*.nlog)|*.nlog";
@@ -23,6 +23,8 @@ namespace Analogy.LogViewer.KamaResearch
         public string FileSaveDialogFilters => "NLog file (*.nlog)|*.nlog";
         public IEnumerable<string> SupportFormats { get; } = new[] { "*.nlog" };
         public string InitialFolderFullPath { get; } = @"C:\kalpa\logs";
+        public Image LargeImage { get; } = null;
+        public Image SmallImage { get; } = null;
         public bool UseCustomColors { get; set; } = false;
         public IEnumerable<(string originalHeader, string replacementHeader)> GetReplacementHeaders()
             => Array.Empty<(string, string)>();

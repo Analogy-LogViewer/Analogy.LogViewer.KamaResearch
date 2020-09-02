@@ -21,8 +21,9 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
         private class Action1 : IAnalogyCustomAction
         {
             public Action Action { get; } = () => { new Settings().ShowDialog(Application.OpenForms[0]); };
-            public Guid ID { get; } = new Guid("43E512C1-D5E0-41F9-858E-23E3E54D5CEE");
-            public Image Image { get; } = Resources.unity;
+            public Guid Id { get; } = new Guid("43E512C1-D5E0-41F9-858E-23E3E54D5CEE");
+            public Image SmallImage { get; } = Resources.Kama;
+            public Image LargeImage { get; } = Resources.Kama;
             public string Title { get; } = "Open Kama Settings";
         }
     }
