@@ -72,13 +72,18 @@ namespace Analogy.LogViewer.KamaResearch
             return await Task.FromResult(Consumer != null);
         }
 
-        public void StartReceiving() => Consumer.StartConsuming();
+        public Task StartReceiving()
+        {
+            Consumer.StartConsuming();
+            return Task.CompletedTask;
+        }
 
 
-        public void StopReceiving()
+        public Task StopReceiving()
         {
             Consumer.OnMessageReady -= Consumer_OnMessageReady;
-            Consumer.StopConsuming();
+            Consumer.StopConsuming(); 
+            return Task.CompletedTask;
         }
 
     }
