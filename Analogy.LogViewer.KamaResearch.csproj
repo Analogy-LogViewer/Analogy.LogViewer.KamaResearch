@@ -57,7 +57,7 @@
     <None Include="Resources\unity.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Analogy.DataProviders.Extensions" Version="1.1.7.5" />
+
     <PackageReference Include="Analogy.LogViewer.Interfaces">
       <Version>2.4.3</Version>
     </PackageReference>
