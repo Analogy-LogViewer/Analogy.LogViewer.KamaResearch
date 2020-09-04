@@ -16,8 +16,8 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
 {
     public class GRPCExtensions : IAnalogyCustomActionsFactory
     {
-        public Guid FactoryId { get; } = new Guid("9bd37cc2-daa7-4d17-974c-01ef3f3c79ba");
-        public string Title { get; } = "Kama actions";
+        public Guid FactoryId { get; set; } = new Guid("9bd37cc2-daa7-4d17-974c-01ef3f3c79ba");
+        public string Title { get; set; } = "Kama actions";
         public IEnumerable<IAnalogyCustomAction> Actions { get; } = new List<IAnalogyCustomAction>
         {
             new Action1()
@@ -39,10 +39,11 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
                     LogManager.Instance.LogError(nameof(Action1), $"Error starting {hostingEXE}: {e.Message}");
                 }
             };
-            public Guid Id { get; } = new Guid("43E512C1-D5E0-41F9-858E-23E3E54D5CEE");
-            public Image SmallImage { get; } = Resources.Kama;
-            public Image LargeImage { get; } = Resources.Kama;
-            public string Title { get; } = "Kalpa Hosting";
+            public Guid Id { get; set; } = new Guid("43E512C1-D5E0-41F9-858E-23E3E54D5CEE");
+            public Image SmallImage { get; set; } = Resources.Kama;
+            public Image LargeImage { get; set; } = Resources.Kama;
+            public string Title { get; set; } = "Kalpa Hosting";
+            public AnalogyCustomActionType Type { get; } = AnalogyCustomActionType.BelongsToProvider;
         }
     }
 }

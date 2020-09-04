@@ -10,8 +10,8 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
 {
     public class KamaActionsFactory : IAnalogyCustomActionsFactory
     {
-        public Guid FactoryId { get; } = KamaFactories.Id;
-        public string Title { get; } = "Kama Unity Implementation";
+        public Guid FactoryId { get; set; } = KamaFactories.Id;
+        public string Title { get; set; } = "Kama Unity Implementation";
 
         public IEnumerable<IAnalogyCustomAction> Actions { get; } = new List<IAnalogyCustomAction>
         {
@@ -21,10 +21,11 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
         private class Action1 : IAnalogyCustomAction
         {
             public Action Action { get; } = () => { new Settings().ShowDialog(Application.OpenForms[0]); };
-            public Guid Id { get; } = new Guid("43E512C1-D5E0-41F9-858E-23E3E54D5CEE");
-            public Image SmallImage { get; } = Resources.Kama;
-            public Image LargeImage { get; } = Resources.Kama;
-            public string Title { get; } = "Open Kama Settings";
+            public Guid Id { get; set; } = new Guid("43E512C1-D5E0-41F9-858E-23E3E54D5CEE");
+            public Image SmallImage { get; set; } = Resources.Kama;
+            public Image LargeImage { get; set; } = Resources.Kama;
+            public string Title { get; set; } = "Open Kama Settings";
+            public AnalogyCustomActionType Type { get; } = AnalogyCustomActionType.BelongsToProvider;
         }
     }
 }
