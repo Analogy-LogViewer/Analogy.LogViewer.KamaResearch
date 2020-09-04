@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Analogy.LogViewer.KamaResearch.Properties;
 
 namespace Analogy.LogViewer.KamaResearch
 {
@@ -23,8 +24,8 @@ namespace Analogy.LogViewer.KamaResearch
         public string FileSaveDialogFilters => "NLog file (*.nlog)|*.nlog";
         public IEnumerable<string> SupportFormats { get; } = new[] { "*.nlog" };
         public string InitialFolderFullPath { get; } = @"C:\kalpa\logs";
-        public Image LargeImage { get; } = null;
-        public Image SmallImage { get; } = null;
+        public Image LargeImage { get; } = Resources.KamaBlack1;
+        public Image SmallImage { get; } = Resources.KamaWhiteBlack;
         public bool UseCustomColors { get; set; } = false;
         public IEnumerable<(string originalHeader, string replacementHeader)> GetReplacementHeaders()
             => Array.Empty<(string, string)>();

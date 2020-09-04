@@ -1,79 +1,84 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>net471;net472;netcoreapp3.1</TargetFrameworks>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <AssemblyTitle>Analogy.LogViewer.KamaResearch</AssemblyTitle>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <UseWindowsForms>true</UseWindowsForms>
-    <Company>Kama Research</Company>
-    <Product>Analogy.LogViewer.KamaResearch</Product>
-    <Copyright>Copyright © Kama Research</Copyright>
-    <OutputPath>bin\$(Configuration)\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugType>full</DebugType>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Net.Http" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Settings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Settings.Designer.cs">
-      <DependentUpon>Settings.cs</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Settings.resx">
-      <DependentUpon>Settings.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Kama.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\unity.png" />
-  </ItemGroup>
-  <ItemGroup>
-
-    <PackageReference Include="Analogy.LogViewer.Interfaces">
-      <Version>2.4.3</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>12.0.3</Version>
-    </PackageReference>
-    <PackageReference Include="System.Threading.Tasks.Extensions">
-      <Version>4.5.4</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\settings.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-    </None>
-  </ItemGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net471;net472;netcoreapp3.1</TargetFrameworks>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<AssemblyTitle>Analogy.LogViewer.KamaResearch</AssemblyTitle>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<UseWindowsForms>true</UseWindowsForms>
+		<Company>Kama Research</Company>
+		<Product>Analogy.LogViewer.KamaResearch</Product>
+		<Copyright>Copyright © Kama Research</Copyright>
+		<OutputPath>bin\$(Configuration)\</OutputPath>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugType>full</DebugType>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DebugType>pdbonly</DebugType>
+	</PropertyGroup>
+	<PropertyGroup>
+		<StartupObject />
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="_ReSharper.Caches\**" />
+		<EmbeddedResource Remove="_ReSharper.Caches\**" />
+		<None Remove="_ReSharper.Caches\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Data.DataSetExtensions" />
+		<Reference Include="Microsoft.CSharp" />
+		<Reference Include="System.Net.Http" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DesignTime>True</DesignTime>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+		<Compile Update="Settings.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Update="Settings.Designer.cs">
+			<DependentUpon>Settings.cs</DependentUpon>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Settings.resx">
+			<DependentUpon>Settings.cs</DependentUpon>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="Resources\Kama.jpg" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="Resources\unity.png" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Analogy.LogViewer.Interfaces">
+			<Version>2.4.3</Version>
+		</PackageReference>
+		<PackageReference Include="Newtonsoft.Json">
+			<Version>12.0.3</Version>
+		</PackageReference>
+		<PackageReference Include="System.Threading.Tasks.Extensions">
+			<Version>4.5.4</Version>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="Resources\settings.png" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="Properties\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+		</None>
+	</ItemGroup>
 </Project>
