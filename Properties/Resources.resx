@@ -121,17 +121,29 @@
   <data name="Kama" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kama.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Kama16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kama16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Kama16x16connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kama16x16connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Kama16x16disconnected" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kama16x16disconnected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Kama16x16FileOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kama16x16FileOpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kama32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kama32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Kama32x32connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kama32x32connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Kama32x32disconnected" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kama32x32disconnected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kama32x32FileOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kama32x32FileOpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KamaBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KamaBlack.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

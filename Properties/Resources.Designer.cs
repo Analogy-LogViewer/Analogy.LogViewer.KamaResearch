@@ -73,6 +73,16 @@ namespace Analogy.LogViewer.KamaResearch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Kama16x16 {
+            get {
+                object obj = ResourceManager.GetObject("Kama16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Kama16x16connected {
             get {
                 object obj = ResourceManager.GetObject("Kama16x16connected", resourceCulture);
@@ -93,6 +103,26 @@ namespace Analogy.LogViewer.KamaResearch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Kama16x16FileOpen {
+            get {
+                object obj = ResourceManager.GetObject("Kama16x16FileOpen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Kama32x32 {
+            get {
+                object obj = ResourceManager.GetObject("Kama32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Kama32x32connected {
             get {
                 object obj = ResourceManager.GetObject("Kama32x32connected", resourceCulture);
@@ -106,6 +136,16 @@ namespace Analogy.LogViewer.KamaResearch.Properties {
         public static System.Drawing.Bitmap Kama32x32disconnected {
             get {
                 object obj = ResourceManager.GetObject("Kama32x32disconnected", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Kama32x32FileOpen {
+            get {
+                object obj = ResourceManager.GetObject("Kama32x32FileOpen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
