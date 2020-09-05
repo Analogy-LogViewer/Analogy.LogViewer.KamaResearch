@@ -27,7 +27,7 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
 
         public IEnumerable<IAnalogyDataProvider> DataProviders { get; } = new List<IAnalogyDataProvider>
             {
-               // new OnlineLog(),
+               new OnlineLog(),
                new OfflineLog()
             };
     }
