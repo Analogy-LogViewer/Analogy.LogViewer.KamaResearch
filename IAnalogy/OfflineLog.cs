@@ -26,18 +26,6 @@ namespace Analogy.LogViewer.KamaResearch
 
         public override Task InitializeDataProviderAsync(IAnalogyLogger logger)
         {
-            RegexSettings nlogRegexSettings = new RegexSettings()
-            {
-                Directory = string.Empty,
-                FileOpenDialogFilters = "All Supported formats (*.nlog)|*.nlog|Plain nlog text file (*.nlog)|*.nlog",
-                RegexPatterns = new List<RegexPattern>
-                {
-                    new RegexPattern(
-                        @"\$(?<Date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2},\d{3})+\|+(?<Thread>\d+)+\|(?<Level>\w+)+\|+(?<Source>.*)\|(?<Text>.*)",
-                        "yyyy-MM-dd HH:mm:ss,fff", "", new List<string> {"*.nlog"})
-                }
-            };
-            Analogy.LogViewer.RegexParser.Managers.UserSettingsManager.UserSettings.Settings = nlogRegexSettings;
             LogManager.Instance.SetLogger(logger);
             return base.InitializeDataProviderAsync(logger);
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 using Analogy.LogViewer.KamaResearch.Properties;
+using Analogy.LogViewer.RegexParser;
 
 namespace Analogy.LogViewer.KamaResearch.IAnalogy
 {
@@ -13,5 +14,21 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
         public override Image SmallImage { get; set; } = Resources.Kama16x16Settings;
         public override Image LargeImage { get; set; } = Resources.Kama32x32Settings;
         public override string Title { get; set; } = "Kama Settings";
+
+        public KamaUserSettingsFactory()
+        {
+            RegexSettings nlogRegexSettings = new RegexSettings
+            {
+                Directory = string.Empty,
+                FileOpenDialogFilters = "All Supported formats (*.nlog)|*.nlog|Plain nlog text file (*.nlog)|*.nlog",
+                RegexPatterns = new List<RegexPattern>
+                {
+                    new RegexPattern(
+                        @"\$(?<Date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2},\d{3})+\|+(?<Thread>\d+)+\|(?<Level>\w+)+\|+(?<Source>.*)\|(?<Text>.*)",
+                        "yyyy-MM-dd HH:mm:ss,fff", "", new List<string> {"*.nlog"})
+                }
+            };
+            Analogy.LogViewer.RegexParser.Managers.UserSettingsManager.UserSettings.Settings = nlogRegexSettings;
+        }
     }
 }
