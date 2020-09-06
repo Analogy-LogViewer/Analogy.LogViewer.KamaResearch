@@ -23,9 +23,8 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
                 FileOpenDialogFilters = "All Supported formats (*.nlog)|*.nlog|Plain nlog text file (*.nlog)|*.nlog",
                 RegexPatterns = new List<RegexPattern>
                 {
-                    new RegexPattern(
-                        @"\$(?<Date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2},\d{3})+\|+(?<Thread>\d+)+\|(?<Level>\w+)+\|+(?<Source>.*)\|(?<Text>.*)",
-                        "yyyy-MM-dd HH:mm:ss,fff", "", new List<string> {"*.nlog"})
+                   // new RegexPattern(@"(?<Date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}.\d{4})\|(?<Level>\w+)\|(?<Source>\w.*)\|(?<Text>.+)","yyyy-MM-dd HH:mm:ss,fff", "", new List<string> {"*.nlog"}),
+                    new RegexPattern(@"(?<Date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}.\d{4})\|(?<Level>\w+)\|(?<Source>\w.*)\|(?<Text>.+)\|(?<Module>\w+)\|(?<ProcessID>\w.*)", "yyyy-MM-dd HH:mm:ss,fff", "", new List<string> {"*.nlog"})
                 }
             };
             Analogy.LogViewer.RegexParser.Managers.UserSettingsManager.UserSettings.Settings = nlogRegexSettings;

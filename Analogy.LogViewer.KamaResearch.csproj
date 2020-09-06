@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 	<PropertyGroup>
 		<TargetFrameworks>netcoreapp3.1</TargetFrameworks>
 		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -28,12 +28,12 @@
 		<EmbeddedResource Remove="_ReSharper.Caches\**" />
 		<None Remove="_ReSharper.Caches\**" />
 	</ItemGroup>
-	<ItemGroup>
+	<!--<ItemGroup>
 		<Reference Include="System.Windows.Forms" />
 		<Reference Include="System.Data.DataSetExtensions" />
 		<Reference Include="Microsoft.CSharp" />
 		<Reference Include="System.Net.Http" />
-	</ItemGroup>
+	</ItemGroup>-->
 	<ItemGroup>
 		<Compile Update="Properties\Resources.Designer.cs">
 			<AutoGen>True</AutoGen>
