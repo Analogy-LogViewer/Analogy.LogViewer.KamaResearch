@@ -1,2 +1,2 @@
-# Analogy KamaResearch [![Build Status](https://dev.azure.com/Analogy-LogViewer/Analogy%20Log%20Viewer/_apis/build/status/Analogy-LogViewer.Analogy.LogViewer.KamaResearch?branchName=master)](https://dev.azure.com/Analogy-LogViewer/Analogy%20Log%20Viewer/_build/latest?definitionId=11&branchName=master)
+# Analogy KamaResearch  ![.NET Core Desktop](https://github.com/Analogy-LogViewer/Analogy.LogViewer.KamaResearch/workflows/.NET%20Core%20Desktop/badge.svg) [![Build Status](https://dev.azure.com/Analogy-LogViewer/Analogy%20Log%20Viewer/_apis/build/status/Analogy-LogViewer.Analogy.LogViewer.KamaResearch?branchName=master)](https://dev.azure.com/Analogy-LogViewer/Analogy%20Log%20Viewer/_build/latest?definitionId=11&branchName=master)
 Kama Research implementation
