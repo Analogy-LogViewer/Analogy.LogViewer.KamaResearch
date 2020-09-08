@@ -169,6 +169,12 @@
   <data name="KamaIcon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KamaIcon2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KamaServices16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KamaServices16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KamaServices32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KamaServices32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KamaWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KamaWhite.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

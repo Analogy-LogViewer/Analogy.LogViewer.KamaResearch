@@ -233,6 +233,26 @@ namespace Analogy.LogViewer.KamaResearch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap KamaServices16x16 {
+            get {
+                object obj = ResourceManager.GetObject("KamaServices16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap KamaServices32x32 {
+            get {
+                object obj = ResourceManager.GetObject("KamaServices32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap KamaWhite {
             get {
                 object obj = ResourceManager.GetObject("KamaWhite", resourceCulture);
