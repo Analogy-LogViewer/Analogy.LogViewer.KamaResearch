@@ -157,6 +157,12 @@
   <data name="KamaBlack1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KamaBlack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KamaBlack16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KamaBlack16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KamaBlack32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KamaBlack32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KamaIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KamaIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -168,6 +174,12 @@
   </data>
   <data name="KamaWhiteBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KamaWhiteBlack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KamaWhiteBlack16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KamaWhiteBlack16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KamaWhiteBlack32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KamaWhiteBlack32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

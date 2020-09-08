@@ -191,6 +191,26 @@ namespace Analogy.LogViewer.KamaResearch.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap KamaBlack16x16 {
+            get {
+                object obj = ResourceManager.GetObject("KamaBlack16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap KamaBlack32x32 {
+            get {
+                object obj = ResourceManager.GetObject("KamaBlack32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         public static System.Drawing.Icon KamaIcon {
@@ -226,6 +246,26 @@ namespace Analogy.LogViewer.KamaResearch.Properties {
         public static System.Drawing.Bitmap KamaWhiteBlack {
             get {
                 object obj = ResourceManager.GetObject("KamaWhiteBlack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap KamaWhiteBlack16x16 {
+            get {
+                object obj = ResourceManager.GetObject("KamaWhiteBlack16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap KamaWhiteBlack32x32 {
+            get {
+                object obj = ResourceManager.GetObject("KamaWhiteBlack32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
