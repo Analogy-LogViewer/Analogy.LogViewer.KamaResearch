@@ -59,7 +59,7 @@ namespace Analogy.LogViewer.KamaResearch
                         if (token.IsCancellationRequested)
                         {
                             string msg = "Processing canceled by User.";
-                            messages.Add(new AnalogyLogMessage(msg, AnalogyLogLevel.Event, AnalogyLogClass.General, "Analogy", "None"));
+                            messages.Add(new AnalogyLogMessage(msg, AnalogyLogLevel.Information, AnalogyLogClass.General, "Analogy", "None"));
                             logWindow.AppendMessages(messages, Utils.GetFileNameAsDataSource(FileName));
                             return messages;
                         }

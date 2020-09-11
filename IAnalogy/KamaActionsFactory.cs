@@ -36,7 +36,7 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
                 }
                 catch (Exception e)
                 {
-                    LogManager.Instance.LogError(nameof(Action1), $"Error starting {hostingEXE}: {e.Message}");
+                    LogManager.Instance.LogError($"Error starting {hostingEXE}: {e.Message}",nameof(Action1));
                 }
             };
 
@@ -61,7 +61,7 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
                 }
                 catch (Exception e)
                 {
-                    LogManager.Instance.LogError(nameof(Action2), $"Error starting {hostingEXE}: {e.Message}");
+                    LogManager.Instance.LogError($"Error starting {hostingEXE}: {e.Message}",nameof(Action2));
                 }
             };
 
@@ -87,7 +87,7 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
                 }
                 catch (Exception e)
                 {
-                    LogManager.Instance.LogError(nameof(Action1), $"Error starting {hostingEXE}: {e.Message}");
+                    LogManager.Instance.LogError($"Error starting {hostingEXE}: {e.Message}",nameof(Action1));
                 }
             };
 
@@ -113,7 +113,7 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
                 }
                 catch (Exception e)
                 {
-                    LogManager.Instance.LogError(nameof(Action1), $"Error starting {hostingEXE}: {e.Message}");
+                    LogManager.Instance.LogError($"Error starting {hostingEXE}: {e.Message}",nameof(Action1));
                 }
             };
 

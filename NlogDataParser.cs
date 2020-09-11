@@ -26,7 +26,7 @@ namespace Analogy.LogViewer.KamaResearch
                 switch (items[1])
                 {
                     case "OFF":
-                        m.Level = AnalogyLogLevel.Disabled;
+                        m.Level = AnalogyLogLevel.None;
                         break;
                     case "TRACE":
                         m.Level = AnalogyLogLevel.Trace;
@@ -35,7 +35,7 @@ namespace Analogy.LogViewer.KamaResearch
                         m.Level = AnalogyLogLevel.Debug;
                         break;
                     case "INFO":
-                        m.Level = AnalogyLogLevel.Event;
+                        m.Level = AnalogyLogLevel.Information;
                         break;
                     case "WARN":
                         m.Level = AnalogyLogLevel.Warning;
@@ -47,7 +47,7 @@ namespace Analogy.LogViewer.KamaResearch
                         m.Level = AnalogyLogLevel.Critical;
                         break;
                     default:
-                        m.Level = AnalogyLogLevel.Event;
+                        m.Level = AnalogyLogLevel.Information;
                         break;
                 }
 
