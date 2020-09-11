@@ -133,6 +133,12 @@
   <data name="Kama16x16FileOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kama16x16FileOpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Kama16x16OpenFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kama16x16OpenFolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kama16x16OpenRecentFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kama16x16OpenRecentFolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Kama16x16Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kama16x16Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,6 +153,12 @@
   </data>
   <data name="Kama32x32FileOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kama32x32FileOpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kama32x32OpenFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kama32x32OpenFolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kama32x32OpenRecentFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kama32x32OpenRecentFolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Kama32x32Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kama32x32Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -113,6 +113,26 @@ namespace Analogy.LogViewer.KamaResearch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Kama16x16OpenFolder {
+            get {
+                object obj = ResourceManager.GetObject("Kama16x16OpenFolder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Kama16x16OpenRecentFolder {
+            get {
+                object obj = ResourceManager.GetObject("Kama16x16OpenRecentFolder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Kama16x16Settings {
             get {
                 object obj = ResourceManager.GetObject("Kama16x16Settings", resourceCulture);
@@ -156,6 +176,26 @@ namespace Analogy.LogViewer.KamaResearch.Properties {
         public static System.Drawing.Bitmap Kama32x32FileOpen {
             get {
                 object obj = ResourceManager.GetObject("Kama32x32FileOpen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Kama32x32OpenFolder {
+            get {
+                object obj = ResourceManager.GetObject("Kama32x32OpenFolder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Kama32x32OpenRecentFolder {
+            get {
+                object obj = ResourceManager.GetObject("Kama32x32OpenRecentFolder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
