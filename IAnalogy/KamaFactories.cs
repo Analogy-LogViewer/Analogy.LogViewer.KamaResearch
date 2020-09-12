@@ -4,19 +4,20 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using Analogy.LogViewer.KamaResearch.Properties;
+using Analogy.LogViewer.Template;
 
 namespace Analogy.LogViewer.KamaResearch.IAnalogy
 {
-    public class KamaFactories : IAnalogyFactory
+    public class KamaFactories : PrimaryFactory
     {
         internal static Guid Id = new Guid("D37EEA25-6CA3-40B2-8454-D53485887693");
-        public Guid FactoryId { get; set; } = Id;
-        public string Title { get; set; } = "Kama Research";
-        public Image SmallImage { get; set; } = Resources.Kama16x16;
-        public Image LargeImage { get; set; } = Resources.Kama32x32;
-        public IEnumerable<IAnalogyChangeLog> ChangeLog { get; set; } = GetChangeLog();
-        public IEnumerable<string> Contributors { get; set; } = new List<string> { "Lior Banai" };
-        public string About { get; set; } = "Kama Research Analogy Implementation";
+        public override Guid FactoryId { get; set; } = Id;
+        public override string Title { get; set; } = "Kama Research";
+        public override Image SmallImage { get; set; } = Resources.Kama16x16;
+        public override Image LargeImage { get; set; } = Resources.Kama32x32;
+        public override IEnumerable<IAnalogyChangeLog> ChangeLog { get; set; } = GetChangeLog();
+        public override IEnumerable<string> Contributors { get; set; } = new List<string> { "Lior Banai" };
+        public override string About { get; set; } = "Kama Research Analogy Implementation";
 
         private static IEnumerable<IAnalogyChangeLog> GetChangeLog()
         {
@@ -24,15 +25,15 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
         }
     }
 
-    public class DataSourceFactory : IAnalogyDataProvidersFactory
+    public class DataSourceFactory : DataProvidersFactory
     {
-        public Guid FactoryId { get; set; } = KamaFactories.Id;
-        public string Title { get; set; } = "Kama Research Logs";
+        public override Guid FactoryId { get; set; } = KamaFactories.Id;
+        public override string Title { get; set; } = "Kama Research Logs";
 
-        public IEnumerable<IAnalogyDataProvider> DataProviders { get; } = new List<IAnalogyDataProvider>
+        public override IEnumerable<IAnalogyDataProvider> DataProviders { get; set; } = new List<IAnalogyDataProvider>
             {
-               new OnlineLog(),
-               new OfflineLog()
+               new KamaOnlineLog(),
+               new KamaOfflineLog()
             };
     }
 }

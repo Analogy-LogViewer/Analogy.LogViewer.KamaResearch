@@ -8,6 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using Analogy.LogViewer.KamaResearch.Managers;
+using Analogy.LogViewer.Template.Managers;
 
 namespace Analogy.LogViewer.KamaResearch.IAnalogy
 {

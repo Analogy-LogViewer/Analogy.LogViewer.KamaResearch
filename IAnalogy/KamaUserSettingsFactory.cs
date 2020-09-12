@@ -4,10 +4,11 @@ using System.Drawing;
 using System.Text;
 using Analogy.LogViewer.KamaResearch.Properties;
 using Analogy.LogViewer.RegexParser;
+using Analogy.LogViewer.RegexParser.IAnalogy;
 
 namespace Analogy.LogViewer.KamaResearch.IAnalogy
 {
-    public class KamaUserSettingsFactory : Analogy.LogViewer.RegexParser.IAnalogy.UserSettingsFactory
+    public class KamaUserSettingsFactory : RegexUserSettingsFactory
     {
         public override Guid FactoryId { get; set; } = KamaFactories.Id;
         public override Guid Id { get; set; } = new Guid("006b1f9b-6b27-4c42-ab03-77d0a514fc25");
