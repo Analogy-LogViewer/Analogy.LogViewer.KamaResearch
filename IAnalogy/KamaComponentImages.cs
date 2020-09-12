@@ -42,29 +42,30 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
         public Image GetLargeRecentFoldersImage(Guid analogyComponentId) => Resources.Kama32x32OpenRecentFolder;
 
         public Image GetSmallRecentFoldersImage(Guid analogyComponentId) => Resources.Kama16x16OpenRecentFolder;
+        public Image GetLargeBookmarksImage(Guid analogyComponentId) => Resources.Kama32x32Bookmarks;
+        public Image GetSmallBookmarksImage(Guid analogyComponentId) => Resources.Kama16x16Bookmarks;
+        public Image GetLargeFilePoolingImage(Guid analogyComponentId) => Resources.Kama32x32FilePooling;
 
-        public Image GetLargeFilePoolingImage(Guid analogyComponentId) => null;
+        public Image GetSmallFilePoolingImage(Guid analogyComponentId) => Resources.Kama32x32FilePooling;
 
-        public Image GetSmallFilePoolingImage(Guid analogyComponentId) => null;
+        public Image GetLargeRecentFilesImage(Guid analogyComponentId) => Resources.Kama32x32RecentFiles;
 
-        public Image GetLargeRecentFilesImage(Guid analogyComponentId) => null;
+        public Image GetSmallRecentFilesImage(Guid analogyComponentId) => Resources.Kama16x16RecentFiles;
 
-        public Image GetSmallRecentFilesImage(Guid analogyComponentId) => null;
+        public Image GetLargeKnownLocationsImage(Guid analogyComponentId) => Resources.Kama32x32KnownLocations;
 
-        public Image GetLargeKnownLocationsImage(Guid analogyComponentId) => null;
+        public Image GetSmallKnownLocationsImage(Guid analogyComponentId) => Resources.Kama16x16KnownLocations;
 
-        public Image GetSmallKnownLocationsImage(Guid analogyComponentId) => null;
+        public Image GetLargeSearchImage(Guid analogyComponentId) => Resources.Kama32x32SearchFiles;
 
-        public Image GetLargeSearchImage(Guid analogyComponentId) => null;
+        public Image GetSmallSearchImage(Guid analogyComponentId) => Resources.Kama16x16SearchFiles;
 
-        public Image GetSmallSearchImage(Guid analogyComponentId) => null;
+        public Image GetLargeCombineLogsImage(Guid analogyComponentId) => Resources.Kama32x32CombineFiles;
 
-        public Image GetLargeCombineLogsImage(Guid analogyComponentId) => null;
+        public Image GetSmallCombineLogsImage(Guid analogyComponentId) => Resources.Kama16x16CombineFiles;
 
-        public Image GetSmallCombineLogsImage(Guid analogyComponentId) => null;
+        public Image GetLargeCompareLogsImage(Guid analogyComponentId) => Resources.Kama32x32CompareFiles;
 
-        public Image GetLargeCompareLogsImage(Guid analogyComponentId) => null;
-
-        public Image GetSmallCompareLogsImage(Guid analogyComponentId) => null;
+        public Image GetSmallCompareLogsImage(Guid analogyComponentId) => Resources.Kama16x16CompareFiles;
     }
 }
