@@ -18,7 +18,7 @@ namespace Analogy.LogViewer.KamaResearch
     {
         public override string OptionalTitle { get; set; } = "Kama Regex offline logs";
         public override Guid Id { get; set; } = new Guid("37E87AD9-109E-4E31-A9D7-F0C8D289DC08");
-        public override string InitialFolderFullPath { get; } = @"C:\kalpa\logs";
+        public override string? InitialFolderFullPath { get; set; } = @"C:\kalpa\logs";
         public override Image LargeImage { get; set; } = Resources.Kama32x32FileOpen;
         public override Image SmallImage { get; set; } = Resources.Kama16x16FileOpen;
 
