@@ -1,15 +1,12 @@
 ﻿using Analogy.Interfaces;
-using Analogy.LogViewer.KamaResearch.Managers;
+using Analogy.LogViewer.gRPC.IAnalogy;
 using Analogy.LogViewer.KamaResearch.Properties;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Threading.Tasks;
-using Analogy.LogViewer.gRPC.IAnalogy;
 
 namespace Analogy.LogViewer.KamaResearch
 {
-    public class KamaOnlineLog : gRPCReceiverClient
+    public class KamaOnlineLog : gRPCServerClient
     {
         public override string OptionalTitle { get; set; } = "Kama gRPC online logs";
         public override Guid Id { get; set; } = new Guid("E37EEA25-6CA3-40B2-8454-D53485887693");
