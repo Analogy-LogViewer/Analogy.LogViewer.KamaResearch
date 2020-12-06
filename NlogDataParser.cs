@@ -21,7 +21,9 @@ namespace Analogy.LogViewer.KamaResearch
                 }
                 AnalogyLogMessage m = new AnalogyLogMessage();
                 if (DateTime.TryParse(items[0], out DateTime dt))
+                {
                     m.Date = dt;
+                }
 
                 switch (items[1])
                 {
@@ -61,8 +63,10 @@ namespace Analogy.LogViewer.KamaResearch
                 m.Source = items[2];
                 m.Module = "N/A";//items[];
                 if (items.Length > 4)
+                {
                     m.ProcessId = int.Parse(items[4]);
-                
+                }
+
                 m.Text = items[3];
                 return m;
             }

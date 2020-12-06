@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using Analogy.Interfaces.DataTypes;
 using Analogy.LogViewer.KamaResearch.Managers;
 using Analogy.LogViewer.Template.Managers;
 
@@ -46,6 +47,7 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
             public Image LargeImage { get; set; } = Resources.Kama32x32;
             public string Title { get; set; } = "Kalpa Hosting";
             public AnalogyCustomActionType Type { get; } = AnalogyCustomActionType.BelongsToProvider;
+            public AnalogyToolTip? ToolTip { get; set; }
         }
         private class Action2 : IAnalogyCustomAction
         {
@@ -71,6 +73,7 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
             public Image LargeImage { get; set; } = Resources.KamaWhiteBlack32x32;
             public string Title { get; set; } = "Kalpa Winforms Hosting";
             public AnalogyCustomActionType Type { get; } = AnalogyCustomActionType.BelongsToProvider;
+            public AnalogyToolTip? ToolTip { get; set; }
         }
 
         private class Action3 : IAnalogyCustomAction
@@ -97,6 +100,7 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
             public Image LargeImage { get; set; } = Resources.KamaBlack32x32;
             public string Title { get; set; } = "Acquisition Simulator";
             public AnalogyCustomActionType Type { get; } = AnalogyCustomActionType.BelongsToProvider;
+            public AnalogyToolTip? ToolTip { get; set; }
         }
 
         private class Action4 : IAnalogyCustomAction
@@ -123,6 +127,7 @@ namespace Analogy.LogViewer.KamaResearch.IAnalogy
             public Image LargeImage { get; set; } = Resources.KamaServices32x32;
             public string Title { get; set; } = "KALPA Processes";
             public AnalogyCustomActionType Type { get; } = AnalogyCustomActionType.BelongsToProvider;
+            public AnalogyToolTip? ToolTip { get; set; }
         }
     }
 }

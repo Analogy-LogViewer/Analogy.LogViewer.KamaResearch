@@ -26,7 +26,10 @@ namespace Analogy.LogViewer.KamaResearch
             try
             {
                 if (!string.IsNullOrEmpty(directoryName) && !(Directory.Exists(directoryName)))
+                {
                     Directory.CreateDirectory(directoryName);
+                }
+
                 using (Stream myWriter = File.Open(filename, FileMode.Create, FileAccess.ReadWrite))
                 {
                     formatter.Serialize(myWriter, item);
@@ -48,6 +51,7 @@ namespace Analogy.LogViewer.KamaResearch
         {
             var formatter = new BinaryFormatter();
             if (File.Exists(filename))
+            {
                 try
                 {
                     using (Stream myReader = File.Open(filename, FileMode.Open, FileAccess.Read))
@@ -63,6 +67,7 @@ namespace Analogy.LogViewer.KamaResearch
                 {
                     throw new Exception("GeneralDataUtils: Error in DeSerializeBinaryFile", ex);
                 }
+            }
 
             throw new FileNotFoundException("GeneralDataUtils: File does not exist: " + filename, filename);
         }
