@@ -55,7 +55,7 @@
 		<None Include="Resources\unity.png" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Analogy.LogViewer.gRPC" Version="1.5.3" />
+		<PackageReference Include="Analogy.LogViewer.gRPC" Version="1.5.4" />
 		<PackageReference Include="Analogy.LogViewer.Template" Version="1.8.0" />
 		<PackageReference Include="Analogy.LogViewer.Interfaces">
 			<Version>2.9.0</Version>
