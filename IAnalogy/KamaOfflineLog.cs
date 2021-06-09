@@ -31,6 +31,13 @@ namespace Analogy.LogViewer.KamaResearch
                 RegexParser.Managers.UserSettingsManager.UserSettings.Settings.RegexPatterns.Insert(0, regexPattern);
             }
 
+
+            var regexPatternPython = new RegexPattern(@"(?<Date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}.\d{6})\s(?<Source>\w+)\:\s(?<Text>.*)",
+                "yyyy-MM-dd HH:mm:ss.ffffff", "", new List<string> { "*.txt" });
+            if (!RegexParser.Managers.UserSettingsManager.UserSettings.Settings.RegexPatterns.Contains(regexPatternPython))
+            {
+                RegexParser.Managers.UserSettingsManager.UserSettings.Settings.RegexPatterns.Insert(1, regexPatternPython);
+            }
             return base.InitializeDataProviderAsync(logger);
         }
     }
