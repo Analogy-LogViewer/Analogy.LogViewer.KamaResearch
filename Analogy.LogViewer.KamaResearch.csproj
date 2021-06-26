@@ -16,7 +16,7 @@
 		<Product>Analogy.LogViewer.KamaResearch</Product>
 		<Copyright>Copyright © Kama Research</Copyright>
 		<OutputPath>bin\$(Configuration)\</OutputPath>
-		<Version>1.4.0</Version>
+		<Version>1.4.1</Version>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 		<DebugType>full</DebugType>
