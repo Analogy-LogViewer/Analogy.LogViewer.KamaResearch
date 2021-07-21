@@ -1,16 +1,11 @@
 ﻿using Analogy.Interfaces;
-using Analogy.LogViewer.KamaResearch.Managers;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using Analogy.LogViewer.KamaResearch.Properties;
 using Analogy.LogViewer.RegexParser;
 using Analogy.LogViewer.RegexParser.IAnalogy;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Threading.Tasks;
 
 namespace Analogy.LogViewer.KamaResearch
 {
@@ -37,6 +32,12 @@ namespace Analogy.LogViewer.KamaResearch
             if (!RegexParser.Managers.UserSettingsManager.UserSettings.Settings.RegexPatterns.Contains(regexPatternPython))
             {
                 RegexParser.Managers.UserSettingsManager.UserSettings.Settings.RegexPatterns.Insert(1, regexPatternPython);
+            }
+            var regexPatternPython2 = new RegexPattern(@"(?<Date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}.\d{6})\s\[(?<Level>\w+)\]\s\[(?<Source>\w+)\]\s(?<Text>.*)",
+                "yyyy-MM-dd HH:mm:ss.ffffff", "", new List<string> { "*.txt" });
+            if (!RegexParser.Managers.UserSettingsManager.UserSettings.Settings.RegexPatterns.Contains(regexPatternPython2))
+            {
+                RegexParser.Managers.UserSettingsManager.UserSettings.Settings.RegexPatterns.Insert(1, regexPatternPython2);
             }
             return base.InitializeDataProviderAsync(logger);
         }
