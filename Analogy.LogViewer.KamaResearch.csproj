@@ -49,10 +49,10 @@
 		<None Include="Resources\unity.png" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Analogy.LogViewer.gRPC" Version="2.0.0" />
-		<PackageReference Include="Analogy.LogViewer.Template" Version="2.0.0" />
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.15.1" />
-		<PackageReference Include="Analogy.LogViewer.RegexParser" Version="2.0.0" />
+		<PackageReference Include="Analogy.LogViewer.gRPC" Version="2.0.1" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="2.1.0" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.15.2" />
+		<PackageReference Include="Analogy.LogViewer.RegexParser" Version="2.0.1" />
 		<PackageReference Include="Newtonsoft.Json">
 			<Version>13.0.1</Version>
 		</PackageReference>
