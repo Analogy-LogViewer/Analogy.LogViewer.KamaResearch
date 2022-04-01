@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Analogy.Interfaces.DataTypes;
 
 namespace Analogy.LogViewer.KamaResearch
 {
     public abstract class LogLoader
     {
-        public abstract Task<IEnumerable<AnalogyLogMessage>> ReadFromStream(Stream dataStream, CancellationToken token, ILogMessageCreatedHandler logWindow);
+        public abstract Task<IEnumerable<AnalogyLogMessage>> ReadFromStream(Stream dataStream, CancellationToken token, ILogMessageCreatedHandler messagesHandler);
 
         public virtual async Task<IEnumerable<AnalogyLogMessage>> ReadFromFile(string filename, CancellationToken token, ILogMessageCreatedHandler logWindow)
         {
@@ -42,12 +43,13 @@ namespace Analogy.LogViewer.KamaResearch
             return await base.ReadFromFile(filename, token, logWindow);
 
         }
-        public override async Task<IEnumerable<AnalogyLogMessage>> ReadFromStream(Stream dataStream, CancellationToken token, ILogMessageCreatedHandler logWindow)
+        public override async Task<IEnumerable<AnalogyLogMessage>> ReadFromStream(Stream dataStream, CancellationToken token, ILogMessageCreatedHandler messagesHandler)
         {
 
             List<AnalogyLogMessage> messages = new List<AnalogyLogMessage>();
             try
             {
+                long count = 0;
                 using (StreamReader streamReader = new StreamReader(dataStream, Encoding.UTF8))
                 {
 
@@ -56,11 +58,13 @@ namespace Analogy.LogViewer.KamaResearch
                         string line = await streamReader.ReadLineAsync();
                         var m = NlogDataParser.ParseData(line);
                         messages.Add(m);
+                        count++;
+                        messagesHandler.ReportFileReadProgress(new AnalogyFileReadProgress(AnalogyFileReadProgressType.Incremental, 1, count, count));
                         if (token.IsCancellationRequested)
                         {
                             string msg = "Processing canceled by User.";
                             messages.Add(new AnalogyLogMessage(msg, AnalogyLogLevel.Information, AnalogyLogClass.General, "Analogy", "None"));
-                            logWindow.AppendMessages(messages, Utils.GetFileNameAsDataSource(FileName));
+                            messagesHandler.AppendMessages(messages, Utils.GetFileNameAsDataSource(FileName));
                             return messages;
                         }
                     }
@@ -82,7 +86,7 @@ namespace Analogy.LogViewer.KamaResearch
                 messages.Add(empty);
 
             }
-            logWindow.AppendMessages(messages, Utils.GetFileNameAsDataSource(FileName));
+            messagesHandler.AppendMessages(messages, Utils.GetFileNameAsDataSource(FileName));
             return messages;
         }
 
