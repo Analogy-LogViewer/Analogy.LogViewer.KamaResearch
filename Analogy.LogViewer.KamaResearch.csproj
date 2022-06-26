@@ -16,7 +16,7 @@
 		<Product>Analogy.LogViewer.KamaResearch</Product>
 		<Copyright>Copyright © Kama Research</Copyright>
 		<OutputPath>bin\$(Configuration)\</OutputPath>
-		<Version>2.1.0</Version>
+		<Version>2.1.1</Version>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 		<DebugType>full</DebugType>
@@ -49,10 +49,10 @@
 		<None Include="Resources\unity.png" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Analogy.LogViewer.gRPC" Version="2.1.0" />
-		<PackageReference Include="Analogy.LogViewer.Template" Version="3.1.0" />
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="3.1.0" />
-		<PackageReference Include="Analogy.LogViewer.RegexParser" Version="2.1.0" />
+		<PackageReference Include="Analogy.LogViewer.gRPC" Version="2.1.2" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="3.2.3" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="3.2.3" />
+		<PackageReference Include="Analogy.LogViewer.RegexParser" Version="2.1.2" />
 		<PackageReference Include="Newtonsoft.Json">
 			<Version>13.0.1</Version>
 		</PackageReference>
